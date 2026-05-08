@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ecommerce Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>Have a question or need help with your order? Send us a message and our support team will reply soon.</p>
+        </section>
+        <section class="contact-wrapper">
+            <div class="contact-details">
+                <div class="contact-card">
+                    <h2>Customer Support</h2>
+                    <p>Email: onlineshoping@gmail.com</p>
+                    <p>Phone: +266 5855 2023</p>
+                </div>
+                <div class="contact-card">
+                    <h2>Store Location</h2>
+                    <p>Maseru</p>
+                    <p>Sefika</p>
+                </div>
+            </div>
+            <form id="contact-form">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" required>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" required>
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ecommerce Site. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message sent! (This is a simulation)');
+        });
+    </script>
+</body>
+</html>

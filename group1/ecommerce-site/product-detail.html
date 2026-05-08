@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Ecommerce Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="product-detail">
+            <!-- Product details will be loaded here -->
+        </div>
+        <div id="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div id="reviews-list">
+                <!-- Reviews will be loaded here -->
+            </div>
+            <h3>Write a Review</h3>
+            <form id="review-form">
+                <label for="review-rating">Rating:</label>
+                <select id="review-rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <label for="review-name">Name:</label>
+                <input type="text" id="review-name" required>
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ecommerce Site. All rights reserved.</p>
+    </footer>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>
